@@ -1,0 +1,9 @@
+.text-public{
+    @apply text-sm lg:text-md text-black font-medium text-justify
+} 
+.text-public-small{
+    @apply text-sm lg:text-base text-dark text-center
+} 
+.text-public-light{
+    @apply text-light
+} 

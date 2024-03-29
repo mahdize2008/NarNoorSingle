@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../Novin Home/assets/css/swiper/swiper.min.css">
+</head>
+
+<body>
+
+
+    <!-- SATRT-MENU -->
+    <div id="menu"
+        class="bg-natural shadow-beta-light w-[320px] fixed h-full z-50 p-4 flex flex-col justify-between -right-[320px]">
+        <div class="flex justify-between items-center mb-4">
+            <img src="./assets/img/logo.png" class="max-w-[45px] max-h-[45px]" alt="">
+            <a href="#" id="btn-close-menu"
+                class="w-8 h-8 rounded-md bg-light/10 shadow-alpha-light flex lg:hidden items-center justify-center">
+                <i class="icon-close text-light text-sm"></i>
+            </a>
+        </div>
+        <ul class="mb-4">
+            <li class="mb-2 last:mb-0">
+                <a href="#" class="flex items-center text-base py-1 text-secondary">
+                    <i class="icon-chat-round-call-svgrepo-com ml-3 text-md"></i>
+                    خدمات
+                </a>
+            </li>
+            <li class="mb-2 last:mb-0">
+                <a href="#" class="flex items-center text-base py-1 text-secondary">
+                    <i class="icon-bag1 ml-3 text-md"></i>
+                    نمومه کارها
+                </a>
+            </li>
+            <li class="mb-2 last:mb-0">
+                <a href="#" class="flex items-center text-base py-1 text-secondary">
+                    <i class="icon-user ml-3 text-md"></i>
+                    مشتریان
+                </a>
+            </li>
+            <li class="mb-2 last:mb-0">
+                <a href="#" class="flex items-center text-base py-1 text-secondary">
+                    <i class="icon-chat-round-call-svgrepo-com ml-3 text-md"></i>
+                    تماس با ما
+                </a>
+            </li>
+            <li class="mb-2 last:mb-0">
+                <a href="#" class="flex items-center text-base py-1 text-secondary">
+                    <i class="icon-call ml-3 text-md"></i>
+                    درباره ما
+                </a>
+            </li>
+        </ul>
+        <ul class="flex flex-wrap justify-center">
+            <li class="flex items-center">
+                <a href="#" class="px-3 py-1 text-light">
+                    <i class="icon-Youtube-2 text-base"></i>
+                </a>
+            </li>
+            <li class="flex items-center">
+                <a href="#" class="px-3 py-1 text-light">
+                    <i class="icon-Linked-in-2 text-base"></i>
+                </a>
+            </li>
+            <li class="flex items-center">
+                <a href="#" class="px-3 py-1 text-light">
+                    <i class="icon-Twiter-2 text-base"></i>
+                </a>
+            </li>
+            <li class="flex items-center">
+                <a href="#" class="px-3 py-1 text-light">
+                    <i class="icon-Facebook-2 text-base"></i>
+                </a>
+            </li>
+            <li class="flex items-center">
+                <a href="#" class="px-3 py-1 text-light">
+                    <i class="icon-Instagram-2 text-base"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="back-menu" class="w-full h-full fixed top-0 right-0 hidden z-40"></div>
+    <!-- END-MENU -->
+
+    <!--START-HEADER-->
+    <header class="lg:px-10 lg:pt-10">
+        <div
+            class="max-lg:bg-natural max-lg:bg py-4 lg:pb-40 bg-cover lg:border-2 relative lg:border-black lg:rounded-2xl lg:overflow-hidden">
+            <!-- style="background-image: url(./assets/img/back-2.png);" -->
+            <img src="./assets/img/back-2.png" class="absolute top-0 right-0 w-full h-full max-lg:hidden" alt="">
+            <div class="container relative z-10">
+                <div class="flex items-center lg:items-start justify-between lg:mb-12 mb-8">
+                    <ul class="flex items-center w-[360px] max-lg:hidden">
+                        <li class="border-l border-natural-beta">
+                            <a href="#" class="flex items-center text-sm px-2 py-1 hover:text-light transition-all">
+                                درباره ما
+                                <i class="icon-chat-round-call-svgrepo-com text-base mr-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <img src="./assets/img/logo.png" class="max-w-[45] lg:max-w-[55px] max-h-[45px] lg:max-h-[55px]"
+                            alt="">
+                    </a>
+                    <ul class="flex items-center max-lg:hidden">
+                        <li class="border-l last:border-l-0 border-natural-beta">
+                            <a href="#" class="flex items-center text-sm px-2 py-1 hover:text-light transition-all">
+                                خدمات
+                                <i class="icon-chat-round-call-svgrepo-com text-base mr-2"></i>
+                            </a>
+                        </li>
+                        <li class="border-l last:border-l-0 border-natural-beta">
+                            <a href="#" class="flex items-center text-sm px-2 py-1 hover:text-light transition-all">
+                                نمومه کارها
+                                <i class="icon-bag1 text-base mr-2"></i>
+                            </a>
+                        </li>
+                        <li class="border-l last:border-l-0 border-natural-beta">
+                            <a href="#" class="flex items-center text-sm px-2 py-1 hover:text-light transition-all">
+                                مشتریان
+                                <i class="icon-user text-base mr-2"></i>
+                            </a>
+                        </li>
+                        <li class="border-l last:border-l-0 border-natural-beta">
+                            <a href="#" class="flex items-center text-sm px-2 py-1 hover:text-light transition-all">
+                                تماس با ما
+                                <i class="icon-call text-base mr-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" id="menu-button"
+                        class="w-8 h-8 rounded-lg bg-light/50 shadow-alpha-light flex lg:hidden items-center justify-center">
+                        <i class="icon-grid text-base text-white"></i>
+                    </a>
+                </div>
+                <div class="flex items-center lg:px-24 max-lg:mb-8">
+                    <div class="w-full lg:w-fit lg:mr-auto">
+                        <h2 class="text-xl lg:text-7xl font-semibold text-white text-center">
+                            Helping Others
+                        </h2>
+                        <h1 class="text-3xl lg:text-10xl font-bold text-center">
+                            shine in your own light
+                        </h1>
+                        <h2 class="text-sm lg:text-base text-light font-semibold text-center mb-3 lg:mb-6">
+                            در نور خودت بدرخش !
+                        </h2>
+                        <a href="#" class="btn-modern max-lg:mx-auto">
+                            <i class="icon-instagram ml-2 relative z-10"></i>
+                            <span>
+                                ارسال درخواست
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--END-HEADER-->
+
+
+    <!--START-MAIN-->
+    <main>
+        <div class="my-8 lg:-mt-16">
+            <div class="container">
+                <div
+                    class="swiper swiper-container swiper-points py-4 lg:py-9 lg:bg-white lg:shadow-alpha-light rounded-xl max-lg:overflow-visible">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-8.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-9.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-10.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-11.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-12.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mb-8">
+            <div class="container">
+                <div class="lg:-m-5 flex flex-wrap items-start">
+                    <div class="w-full lg:w-[60%] lg:p-5 max-lg:order-2">
+                        <h2 class="title-public mb-1 lg:mb-7 max-lg:mx-auto w-fit">
+                            نارنور در یک نگاه ....
+                        </h2>
+                        <p class="text-public">
+                            یکی از مهم‌ترین امور برای هر سازمان و هر کسب و کار، برندینگ است. برندینگ به کسب و کار شما
+                            هویت می‌بخشد و آن را در میان مخاطبین به یادماندنی می‌کند. همچنین برندینگ مصرف‌کنندگان را
+                            ترغیب می‌کند از شما خرید کنند و از تبلیغات و بازاریابی شما حمایت می‌کند. برندینگ خوب
+                            می‌تواند موجب افتخار مصرف‌کنندگان شما هنگام استفاده از برندتان یا حتی کارکنانتان شود.نگاهی
+                            به آمار برندینگ و اعتمادسنجی (https://www.edelman.com/) EDELMAN در سال 2019 به ما نشان
+                            می‌دهد: 81% از مصرف‌کنندگان نیاز دارند به برند اعتماد داشته باشند تا بتوانند آن را بخرند.
+                            77% از مصرف‌کنندگان ترجیح می‌دهند از برندی خرید کنند که آن را در شبکه‌های اجتماعی دنبال
+                            می‌کنند. 65% از مصرف‌کنندگان اعلام کرده‌اند مدیران و کارکنان برند و رفتار و شخصیت آن‌ها، بر
+                            تصمیم آن‌ها برای خرید تأثیرگزارند.بنابراین برندی که به خوبی توسعه یافته باشد، بر احساسات
+                            مخاطبینش تأثیری خواهد گذاشت که آن‌ها را به انتخابش از میان برندهای دیگر سوق می‌دهد و روابط
+                            مؤثرتری با مشتریانش ایجاد می‌کند. کانون تبلیغاتی کروشه با گردآوری تیمی مجرب و متخصص در تمام
+                            حوزه‌های برندینگ و ارائه بهترین خدمات برندسازی برای کسب و کارهای گوناگون، آماده همکاری با
+                            شماست تا در مسیر گم نشوید!
+                        </p>
+                    </div>
+                    <div class="max-lg:order-1 max-lg:max-w-[300px] lg:w-[40%] lg:p-5 max-lg:mx-auto max-lg:mb-4">
+                        <img src="./assets/img/picture-1.png" class="w-full rounded-3xl" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <div class="container">
+                <h2 class="title-public mb-2">
+                    سایر خدمات
+                </h2>
+                <div
+                    class="swiper swiper-container swiper-points-2 py-4 lg:py-9 lg:bg-white lg:shadow-alpha-light lg:rounded-xl max-lg:overflow-visible">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-13.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-14.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-15.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-17.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                        <div class="swiper-slide points-slide group">
+                            <div class="points-slide-img-box">
+                                <img src="./assets/img/icon-16.svg" class="points-slide-img" alt="">
+                            </div>
+                            <h2 class="title-public-medium mb-1">
+                                برندینگ
+                            </h2>
+                            استراتژی، قالب محتوایی
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-6 lg:mb-12">
+            <div class="container flex flex-wrap items-center">
+                <h2 class="title-public ml-auto mb-3 lg:mb-6">
+                    نمونه کارها
+                </h2>
+                <a href="#" class="btn-modern lg:mb-6 order-3 lg:order-2">
+                    <span>
+                        مشاهده تمامی نمونه کارها
+                    </span>
+                </a>
+                <div
+                    class="swiper swiper-container swiper-product max-lg:overflow-visible max-lg:mb-3 w-full order-2 lg:order-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide black-gradient h-[270px] lg:h-[380px] relative rounded-lg overflow-hidden bg-cover p-4 max-lg:w-[220px]"
+                            style="background-image: url(./assets/img/p-1.png);">
+                            <div
+                                class="relative h-full z-10 flex flex-col items-end justify-end text-sm text-white font-light">
+                                <h2 class="title-public title-public-white">
+                                    بسته بندی محصول
+                                </h2>
+                                شرکت لیافو
+                                <a href="#" class="btn-public mt-1">
+                                    مشاهده
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide black-gradient h-[270px] lg:h-[380px] relative rounded-lg overflow-hidden bg-cover p-4 max-lg:w-[220px]"
+                            style="background-image: url(./assets/img/p-1.png);">
+                            <div
+                                class="relative h-full z-10 flex flex-col items-end justify-end text-sm text-white font-light">
+                                <h2 class="title-public title-public-white">
+                                    بسته بندی محصول
+                                </h2>
+                                شرکت لیافو
+                                <a href="#" class="btn-public mt-1">
+                                    مشاهده
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide black-gradient h-[270px] lg:h-[380px] relative rounded-lg overflow-hidden bg-cover p-4 max-lg:w-[220px]"
+                            style="background-image: url(./assets/img/p-1.png);">
+                            <div
+                                class="relative h-full z-10 flex flex-col items-end justify-end text-sm text-white font-light">
+                                <h2 class="title-public title-public-white">
+                                    بسته بندی محصول
+                                </h2>
+                                شرکت لیافو
+                                <a href="#" class="btn-public mt-1">
+                                    مشاهده
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide black-gradient h-[270px] lg:h-[380px] relative rounded-lg overflow-hidden bg-cover p-4 max-lg:w-[220px]"
+                            style="background-image: url(./assets/img/p-1.png);">
+                            <div
+                                class="relative h-full z-10 flex flex-col items-end justify-end text-sm text-white font-light">
+                                <h2 class="title-public title-public-white">
+                                    بسته بندی محصول
+                                </h2>
+                                شرکت لیافو
+                                <a href="#" class="btn-public mt-1">
+                                    مشاهده
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="h-0.5 bg-natural"></div>
+        </div>
+
+        <div class="py-6 lg:py-12">
+            <div class="container">
+                <div class="md:-m-4 lg:-m-8 flex items-center flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-3/5 max-md:mb-2 md:p-4 lg:p-8">
+                        <img src="./assets/img/picture-2.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-2/5 md:p-4 lg:p-8">
+                        <h2 class="title-public title-public-xl title-public-secondary mb-3 lg:mb-6">
+                            مجموعه ای از محتواهای ویدئویی که توسط کانون ایران نوین در خلال پروژه ها و کمپین های مختلف
+                            ساخته شده است.
+                        </h2>
+                        <p class="text-public text-public-light mb-3 lg:mb-6">
+                            مجموعه ای از محتواهای ویدئویی که توسط کانون ایران نوین در خلال پروژه ها و کمپین های مختلف
+                            ساخته شده است.
+                        </p>
+                        <a href="#" class="flex items-center max-lg:text-sm w-fit mr-auto">
+                            Watch Video
+                            <div
+                                class="w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-alpha-light mr-3">
+                                <i class="icon-Play"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="h-0.5 bg-natural"></div>
+        </div>
+
+        <div class="py-6 lg:py-12">
+            <div class="container">
+                <div class="w-full lg:w-3/5 mx-auto mb-5 lg:mb-10">
+                    <h2 class="title-public title-public-larg text-center">
+                        چرا نارنور
+                    </h2>
+                    <p class="text-public-small">
+                        همیشه از صمیم قلب در کنار همه مشتریان خود ایستاده‌ایم و این اعتقاد را به آن‌ها منتقل می‌کنیم که
+                        همه ما دور یک میز نشسته‌ایم نه روبروی یکدیگر!
+                    </p>
+                </div>
+                <div class="-m-16">
+                    <div class="swiper swiper-container swiper-items p-16">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#"
+                                    class="block p-4 lg:p-8 bg-natural-tetha hover:bg-white hover:shadow-tetha-light transition-all duration-300 rounded-lg ">
+                                    <img src="./assets/img/icon-4.svg" class="lg:max-h-[60px] max-h-10 mr-auto mb-1"
+                                        alt="">
+                                    <h2 class="title-public text-end">
+                                        دوستانه در کنار شما هستیم
+                                    </h2>
+                                    <p class="text-public-small text-end">
+                                        صحت عمل، خدمات با کیفیت و
+                                        تعهد به نیاز مشتری
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#"
+                                    class="block p-4 lg:p-8 bg-natural-tetha hover:bg-white hover:shadow-tetha-light transition-all duration-300 rounded-lg ">
+                                    <img src="./assets/img/icon-3.svg" class="lg:max-h-[60px] max-h-10 mr-auto mb-1"
+                                        alt="">
+                                    <h2 class="title-public text-end">
+                                        دوستانه در کنار شما هستیم
+                                    </h2>
+                                    <p class="text-public-small text-end">
+                                        صحت عمل، خدمات با کیفیت و
+                                        تعهد به نیاز مشتری
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#"
+                                    class="block p-4 lg:p-8 bg-natural-tetha hover:bg-white hover:shadow-tetha-light transition-all duration-300 rounded-lg ">
+                                    <img src="./assets/img/icon-2.svg" class="lg:max-h-[60px] max-h-10 mr-auto mb-1"
+                                        alt="">
+                                    <h2 class="title-public text-end">
+                                        دوستانه در کنار شما هستیم
+                                    </h2>
+                                    <p class="text-public-small text-end">
+                                        صحت عمل، خدمات با کیفیت و
+                                        تعهد به نیاز مشتری
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="h-0.5 bg-natural"></div>
+        </div>
+
+        <div class="py-6 lg:py-12">
+            <div class="container">
+                <div class="lg:px-16">
+                    <h2 class="title-public mb-4">
+                        وبلاگ
+                    </h2>
+                    <div class="swiper swiper-container swiper-article max-md:overflow-visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#"
+                                    class="block p-1 border-b-2 border-r-2 max-md:border-2 group rounded-3xl border-natural">
+                                    <img src="./assets/img/picture-3.png"
+                                        class="max-h-[150px] lg:max-h-[250px] rounded-3xl mb-2 w-full" alt="">
+                                    <span class="text-public-small block text-start px-4">
+                                        آموزشی ، گرافیک
+                                    </span>
+                                    <h2 class="title-public">
+                                        نقش ui در بازدید سایت
+                                    </h2>
+                                    <span class="text-public-small block text-end group-hover:text-primary transition-all px-4">
+                                        خواندن این مطلب
+                                        <br>
+                                        ....
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#" class="block p-1 border-y-2 max-md:border-2 group rounded-3xl border-natural">
+                                    <img src="./assets/img/picture-3.png"
+                                        class="max-h-[150px] lg:max-h-[250px] rounded-3xl mb-2 w-full" alt="">
+                                    <span class="text-public-small block text-start px-4">
+                                        آموزشی ، گرافیک
+                                    </span>
+                                    <h2 class="title-public">
+                                        نقش ui در بازدید سایت
+                                    </h2>
+                                    <span class="text-public-small block text-end group-hover:text-primary transition-all px-4">
+                                        خواندن این مطلب
+                                        <br>
+                                        ....
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide max-md:w-[235px]">
+                                <a href="#"
+                                    class="block p-1 border-t-2 border-l-2 max-md:border-2 group rounded-3xl border-natural">
+                                    <img src="./assets/img/picture-3.png"
+                                        class="max-h-[150px] lg:max-h-[250px] rounded-3xl mb-2 w-full" alt="">
+                                    <span class="text-public-small block text-start px-4">
+                                        آموزشی ، گرافیک
+                                    </span>
+                                    <h2 class="title-public">
+                                        نقش ui در بازدید سایت
+                                    </h2>
+                                    <span class="text-public-small block text-end group-hover:text-primary transition-all px-4">
+                                        خواندن این مطلب
+                                        <br>
+                                        ....
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 lg:py-12">
+            <div class="container">
+                <div class="w-full lg:w-1/2 mx-auto mb-4">
+                    <h2 class="title-public title-public-larg text-center">
+                        مشتریان مـــا
+                    </h2>
+                    <p class="text-public-small">
+                        مشتریان، سرمایه‌هایی هستند که با وجودشان کروشه شکل و معنا گرفته است و ما مفتخریم در طی این
+                        سال‌ها،
+                        تالار افتخارات کروشه، مجموعه‌ای از نام‌هایی‌ست که در مسیر بازاریابی، تبلیغات و برندینگ همراهشان
+                        بوده
+                        و خواهیم بود.
+                    </p>
+                </div>
+            </div>
+            <!-- <div> -->
+            <ul class="flex flex-wrap justify-center">
+                <li
+                    class="w-[10%] hidden sm:flex border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-6.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-5.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-7.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-6.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-[10%] hidden sm:flex border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                </li>
+
+
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-5.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-7.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-6.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-5.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-7.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+
+
+                <li
+                    class="w-[10%] hidden sm:flex border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-6.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-5.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-7.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-1/4 sm:w-1/5 border-l border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                    <a href="#" class="h-[80px] md:h-[100px] lg:h-[130px] flex items-center justify-center">
+                        <img src="./assets/img/icon-7.svg" class="max-h-[60px] md:max-h-[60px] lg:max-h-[120px] max-w-full"
+                        alt="">
+                    </a>
+                </li>
+                <li
+                    class="w-[10%] hidden sm:flex border-natural border-b [&:nth-last-child(-n+2)]:border-l-0 sm:[&:nth-child(5)]:border-l-0 sm:[&:nth-last-child(-n+6)]:border-b-0 max-sm:[&:nth-last-child(-n+2)]:w-full max-sm:[&:nth-last-child(-n+2)]:border-b-0">
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+
+
+    </main>
+    <!--END-MAIN-->
+
+    <!--START-FOOTER-->
+    <footer class="bg-darker">
+        <div class="py-6 lg:py-12">
+            <ul class="flex flex-wrap justify-center">
+                <li class="flex items-center">
+                    <a href="#" class="px-3 py-1 text-white hover:text-primary">
+                        <i class="icon-Youtube-2 text-base"></i>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="#" class="px-3 py-1 text-white hover:text-primary">
+                        <i class="icon-Linked-in-2 text-base"></i>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="#" class="px-3 py-1 text-white hover:text-primary">
+                        <i class="icon-Twiter-2 text-base"></i>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="#" class="px-3 py-1 text-white hover:text-primary">
+                        <i class="icon-Facebook-2 text-base"></i>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="#" class="px-3 py-1 text-white hover:text-primary">
+                        <i class="icon-Instagram-2 text-base"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="h-0.5 bg-dark-alpha"></div>
+        </div>
+
+        <div class="py-3 lg:py-4 max-sm:hidden">
+            <div class="container">
+                <ul class="flex lg:justify-end">
+                    <li class="text-base lg:text-md text-white font-light w-1/3 lg:w-[26%] flex lg:justify-end">
+                        تماس با ما
+                    </li>
+                    <li class="text-base lg:text-md text-white font-light w-1/3 lg:w-[26%] flex lg:justify-end">
+                        خدمات
+                    </li>
+                    <li class="text-base lg:text-md text-white font-light w-1/3 lg:w-[26%] flex lg:justify-end">
+                        لینک های مفید
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container max-sm:hidden">
+            <div class="h-0.5 bg-dark-alpha"></div>
+        </div>
+
+        <div class="py-4 md:py-6 lg:py-8">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <a href="#"
+                        class="w-[22%] max-lg:hidden flex group items-center justify-center relative h-[190px] rounded-3xl overflow-hidden">
+                        <img src="./assets/img/picture-4.png" class="absolute top-0 right-0 w-full h-full" alt="">
+                        <div href="#" class="btn-secondary">
+                            <span>
+                                Read Now
+                            </span>
+                        </div>
+                    </a>
+                    <div class="w-full sm:w-1/3 lg:w-[26%] max-sm:flex max-sm:flex-wrap max-sm:mb-6">
+                        <h3 class="text-base text-white sm:hidden w-full mb-2">
+                            تماس با ما
+                        </h3>
+                        <div class="relationship sm:mb-4 max-sm:ml-2">
+                            <p class="relative z-10">
+                                Tehran Province,
+                                <br>
+                                Nelson Mandela Blvd
+                                <br>
+                                saba,blvd54
+                            </p>
+                        </div>
+                        <div class="relationship max-sm:bg-gradient-to-r">
+                            <p class="relative z-10">
+                                021 - 458756
+                                <br>
+                                mail@primarily.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-1/2 sm:w-1/3 lg:w-[26%] lg:flex lg:justify-end">
+                        <h3 class="text-base text-white sm:hidden w-full mb-2">
+                            خدمات
+                        </h3>
+                        <ul>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                    برندینگ
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                    طراحی و چاپ
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                    ویدئو گرافی
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                    طراحی سایت
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                    عکاسی صنعتی
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 sm:w-1/3 lg:w-[26%] lg:flex lg:justify-end">
+                        <h3 class="text-base text-white sm:hidden w-full mb-2">
+                            لینک های مفید
+                        </h3>
+                        <ul>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                وبلاگ
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                چرا نار نور
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                سفارش
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                مشتریان
+                                </a>
+                            </li>
+                            <li class="mb-1 sm:mb-2">
+                                <a href="#" class="subtitle-public hover:text-primary transition-all duration-200 lg:text-end block">
+                                درباره ما
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="h-0.5 bg-dark-alpha"></div>
+        </div>
+
+        <div class="py-4">
+            <div class="container flex justify-center">
+                <p class="subtitle-public text-end">
+                    Copyright © Primarly | Designed by
+                    <br>
+                    Moein khaghani
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!--END-FOOTER-->
+
+
+    <!-- https://www.figma.com/file/XMQhbEPd6I6gUXtnwC1wbE/Golobe---Travel-agency-website-(Community)?type=design&node-id=9-569&mode=design&t=o6CKs0QzbOzR3GYW-0 -->
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/home-page.js"></script>
+</body>
+
+</html>
+
+proje darim
+2sat javascript
+
+
+proje darim
+1sat javascript

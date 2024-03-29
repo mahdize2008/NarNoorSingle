@@ -1,0 +1,3 @@
+.subtitle-public{
+    @apply text-sm lg:text-base text-white font-light
+}

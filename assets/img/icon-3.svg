@@ -1,0 +1,14 @@
+<svg width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<circle id="Background" cx="48" cy="38" r="21.5" fill="#FFC107"/>
+<path id="Pattern" d="M25 34.5C34.1127 34.5 41.5 27.1127 41.5 18C41.5 8.8873 34.1127 1.5 25 1.5C15.8873 1.5 8.5 8.8873 8.5 18C8.5 27.1127 15.8873 34.5 25 34.5Z" stroke="#303030" stroke-width="3" stroke-miterlimit="10"/>
+<path id="Pattern_2" d="M1.5 45.5C4.37931 42.0554 7.97529 39.2855 12.0352 37.3852C16.0951 35.4848 20.5204 34.5 25 34.5C29.4796 34.5 33.9049 35.4848 37.9648 37.3852C42.0247 39.2855 45.6207 42.0554 48.5 45.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_3" d="M56 31.5C58.4853 31.5 60.5 29.7091 60.5 27.5C60.5 25.2909 58.4853 23.5 56 23.5C53.5147 23.5 51.5 25.2909 51.5 27.5C51.5 29.7091 53.5147 31.5 56 31.5Z" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_4" d="M55.5 23.5V19.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_5" d="M52.5 25.5L49.5 23.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_6" d="M52.5 29.5L49.5 31.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_7" d="M55.5 31.5V35.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_8" d="M59.5 29.5L62.5 31.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Pattern_9" d="M59.5 25.5L62.5 23.5" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

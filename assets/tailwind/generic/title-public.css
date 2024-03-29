@@ -1,0 +1,18 @@
+.title-public{
+    @apply text-md lg:text-2xl text-black font-normal text-justify
+}
+.title-public-larg{
+    @apply text-lg lg:text-3xl font-bold
+}
+.title-public-xl{
+    @apply text-base lg:text-xl font-bold
+}
+.title-public-secondary{
+    @apply text-secondary
+}
+.title-public-medium{
+    @apply text-base lg:text-md text-black font-semibold
+}
+.title-public-white{
+    @apply text-white
+}

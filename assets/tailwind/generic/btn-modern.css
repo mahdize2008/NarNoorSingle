@@ -1,0 +1,26 @@
+.btn-modern{
+    @apply px-2 lg:px-4 border-2 rounded-md border-orange flex items-center w-fit py-1 lg:py-2 text-sm lg:mr-auto relative z-10 hover:text-white transition-all duration-300
+}
+.btn-modern span{
+    @apply relative z-10
+}
+.btn-modern::after{
+    @apply content-[''] absolute top-0 right-0 h-full w-0 bg-orange hover:w-full transition-all duration-300
+}
+
+.btn-public{
+    @apply flex items-center justify-center w-full bg-primary hover:bg-primary-dark py-1.5 lg:py-2.5 text-black font-normal rounded transition-all duration-150;
+    /* color: #cba603 */
+}
+
+.btn-secondary{
+    @apply flex items-center justify-center px-10 py-3 relative
+}
+
+.btn-secondary span{
+    @apply relative z-10 text-lg font-bold
+}
+
+.btn-secondary::before{
+    @apply content-[''] w-3/5 left-0 top-0 h-full bg-white/70 absolute z-0 rounded group-hover:w-full transition-all duration-300 group-hover:bg-white
+}

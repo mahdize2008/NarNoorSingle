@@ -1,0 +1,8 @@
+.relationship{
+    @apply relative subtitle-public text-left px-4 lg:px-10 py-4 rounded-2xl w-fit lg:mr-auto bg-gradient-to-l from-natural-gamma to-transparent
+}
+.relationship::after{
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    @apply content-[''] top-1/2 absolute right-1/2 -translate-y-1/2 translate-x-1/2 bg-darker rounded-2xl
+}
